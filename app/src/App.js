@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UserCard from './components/UserCard';
 
 import axios from 'axios';
 
@@ -36,7 +37,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div>App Test</div>
+      <UserCard data={this.state.data} followers={this.state.followers}/>
     )
   }
 
